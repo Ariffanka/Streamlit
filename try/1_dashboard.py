@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import re
+import os
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from prettytable import PrettyTable
@@ -18,7 +19,10 @@ from plotly.subplots import make_subplots
 from pathlib import Path
 
 #garret_burhenn_pitches_csv = Path("ppdb_2021.csv").parents[1] / 'GarretBurhennData/Garret_Burhenn_Pitches.csv'
-ppdb21= pd.read_csv(Path("ppdb_2021.csv"))
+dir_name = os.path.abspath(os.path.dirname("ppdb_2021.csv"))
+location = os.path.join(dir_name, 'ppdb_2021.csv')
+location2 = os.path.join(dir_name, 'route.csv')
+ppdb21= pd.read_csv()
 ppdb20= pd.read_csv("ppdb_2020.csv")
 ppdb22= pd.read_csv("ppdb_2022.csv")
 
