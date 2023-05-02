@@ -5,3 +5,4 @@ scikit-learn==0.24.2
 seaborn==0.12.2
 prettytable==3.7.0
 plotly==5.14.1
+ipython==8.13.0
