@@ -18,11 +18,11 @@ from plotly.subplots import make_subplots
 
 from pathlib import Path
 
-garret_burhenn_pitches_csv = Path(__file__).parents[1] # 'GarretBurhennData/Garret_Burhenn_Pitches.csv'
+test = Path(__file__).parents[1] # 'GarretBurhennData/Garret_Burhenn_Pitches.csv'
 # dir_name = os.path.abspath(os.path.dirname("__file__"))
 # test = os.path.join(dir_name, 'ppdb_2021.csv')
 # # location2 = os.path.join(dir_name, 'route.csv')
-# ppdb21= pd.read_csv(test)
+ppdb21= pd.read_csv(test)
 ppdb20= pd.read_csv("ppdb_2020.csv")
 ppdb22= pd.read_csv("ppdb_2022.csv")
 
